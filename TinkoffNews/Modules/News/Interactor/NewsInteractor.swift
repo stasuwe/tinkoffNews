@@ -11,13 +11,24 @@ import Foundation
 final class NewsInteractor: NewsInteractorInput {
     
     fileprivate let apiService: APIService?
+    fileprivate let cacheService: CacheService?
     
-    init(apiService: APIService) {
+    init(apiService: APIService, cacheService: CacheService) {
         self.apiService = apiService
+        self.cacheService = cacheService
     }
 
-    func fetchNews(completion: @escaping FetchCompletion) {
-       apiService?.getNews(completion)
+    func fetchNews(useCache: Bool, completion: @escaping FetchCompletion) {
+        if let newsItems = cacheService?.getNews(),
+            newsItems.count > 0,
+            useCache {
+            completion(newsItems)
+        } else {
+            apiService?.getNews({ [weak self] newsItems in
+                self?.cacheService?.saveNews(newsItems)
+                completion(newsItems)
+            })
+        }
     }
     
 }

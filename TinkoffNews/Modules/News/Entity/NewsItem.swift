@@ -13,6 +13,12 @@ struct NewsItem {
     let text: String
     let publicationDate: Date
     
+    init(id: String, text: String, publicationDate: Date) {
+        self.id = id
+        self.text = text
+        self.publicationDate = publicationDate
+    }
+    
     init?(json: [String: Any]) {
         
         guard
@@ -22,9 +28,11 @@ struct NewsItem {
             let _timeInterval = _publicationDate["milliseconds"] as? Double
             else { return nil }
         
-        self.id = _id
-        self.text = String(htmlEncodedString: _text)
-        self.publicationDate = Date(timeIntervalSince1970: _timeInterval/1000)
+        self.init(id: _id,
+                  text: String(htmlEncodedString: _text),
+                  publicationDate: Date(timeIntervalSince1970: _timeInterval/1000))
     }
+    
+
     
 }

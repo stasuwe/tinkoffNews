@@ -16,7 +16,6 @@ struct ArticleViewItem {
 protocol ArticleViewInput: class, ViewLifecycleObservable {
     
     func setTitle(_ title: String)
-    //func showLoading()
     func setData(_ data: ArticleViewItem)
     
 }

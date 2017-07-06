@@ -11,7 +11,7 @@ import Foundation
 protocol NewsInteractorInput: class {
     typealias FetchCompletion = (_ news: [NewsItem]) -> ()
     
-    func fetchNews(completion: @escaping FetchCompletion)
+    func fetchNews(useCache: Bool, completion: @escaping FetchCompletion)
     
 }
 

@@ -40,6 +40,11 @@
 		154BC43B1F0E7EE8004AECBE /* ArticleModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154BC43A1F0E7EE8004AECBE /* ArticleModuleIO.swift */; };
 		154BC43E1F0E82A3004AECBE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154BC43D1F0E82A3004AECBE /* APIService.swift */; };
 		154BC4401F0E830B004AECBE /* APIServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154BC43F1F0E830B004AECBE /* APIServiceImpl.swift */; };
+		154BC4421F0E8BAA004AECBE /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154BC4411F0E8BAA004AECBE /* CacheService.swift */; };
+		154BC4441F0E8BB4004AECBE /* CacheServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154BC4431F0E8BB4004AECBE /* CacheServiceImpl.swift */; };
+		154BC4471F0E9350004AECBE /* CacheModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 154BC4451F0E9350004AECBE /* CacheModel.xcdatamodeld */; };
+		154BC44A1F0E93C5004AECBE /* CachedNewsItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154BC4481F0E93C5004AECBE /* CachedNewsItem+CoreDataClass.swift */; };
+		154BC44B1F0E93C5004AECBE /* CachedNewsItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154BC4491F0E93C5004AECBE /* CachedNewsItem+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +83,11 @@
 		154BC43A1F0E7EE8004AECBE /* ArticleModuleIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleModuleIO.swift; sourceTree = "<group>"; };
 		154BC43D1F0E82A3004AECBE /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		154BC43F1F0E830B004AECBE /* APIServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceImpl.swift; sourceTree = "<group>"; };
+		154BC4411F0E8BAA004AECBE /* CacheService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		154BC4431F0E8BB4004AECBE /* CacheServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheServiceImpl.swift; sourceTree = "<group>"; };
+		154BC4461F0E9350004AECBE /* CacheModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CacheModel.xcdatamodel; sourceTree = "<group>"; };
+		154BC4481F0E93C5004AECBE /* CachedNewsItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CachedNewsItem+CoreDataClass.swift"; path = "../../CachedNewsItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		154BC4491F0E93C5004AECBE /* CachedNewsItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CachedNewsItem+CoreDataProperties.swift"; path = "../../CachedNewsItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +136,6 @@
 				154BC3E71F0E67E9004AECBE /* LaunchScreen.storyboard */,
 				154BC3E21F0E67E9004AECBE /* Main.storyboard */,
 			);
-			name = "Supporting Files";
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
@@ -135,7 +144,6 @@
 			children = (
 				154BC3F21F0E6850004AECBE /* ModuleFactory.swift */,
 			);
-			name = Factories;
 			path = Factories;
 			sourceTree = "<group>";
 		};
@@ -144,7 +152,6 @@
 			children = (
 				154BC3F41F0E6875004AECBE /* MainRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -155,7 +162,6 @@
 				154BC4301F0E7B7A004AECBE /* BaseViewController.swift */,
 				154BC3F71F0E687B004AECBE /* ViewLifecycleObservable.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -168,7 +174,6 @@
 				154BC43C1F0E8280004AECBE /* Services */,
 				154BC3FB1F0E689D004AECBE /* View */,
 			);
-			name = Common;
 			path = Common;
 			sourceTree = "<group>";
 		};
@@ -178,7 +183,6 @@
 				154BC3FF1F0E68CD004AECBE /* Article */,
 				154BC4001F0E68E0004AECBE /* News */,
 			);
-			name = Modules;
 			path = Modules;
 			sourceTree = "<group>";
 		};
@@ -191,7 +195,6 @@
 				154BC4241F0E7966004AECBE /* Presenter */,
 				154BC4231F0E7962004AECBE /* View */,
 			);
-			name = Article;
 			path = Article;
 			sourceTree = "<group>";
 		};
@@ -205,7 +208,6 @@
 				154BC4131F0E6ADE004AECBE /* Router */,
 				154BC4021F0E68FC004AECBE /* View */,
 			);
-			name = News;
 			path = News;
 			sourceTree = "<group>";
 		};
@@ -214,7 +216,6 @@
 			children = (
 				154BC4061F0E6934004AECBE /* NewsAssembly.swift */,
 			);
-			name = Assembly;
 			path = Assembly;
 			sourceTree = "<group>";
 		};
@@ -225,7 +226,6 @@
 				154BC4081F0E697F004AECBE /* NewsViewController.swift */,
 				154BC40A1F0E69F1004AECBE /* NewsViewIO.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -235,7 +235,6 @@
 				154BC4141F0E6AF6004AECBE /* NewsInteractor.swift */,
 				154BC4161F0E6B03004AECBE /* NewsInteractorIO.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -244,7 +243,6 @@
 			children = (
 				154BC4111F0E6AC7004AECBE /* NewsPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -253,7 +251,6 @@
 			children = (
 				154BC41C1F0E6B50004AECBE /* NewsItem.swift */,
 			);
-			name = Entity;
 			path = Entity;
 			sourceTree = "<group>";
 		};
@@ -264,7 +261,6 @@
 				154BC41E1F0E70DB004AECBE /* StringExtensions.swift */,
 				154BC40F1F0E6A7B004AECBE /* UITableViewExtensions.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -274,7 +270,6 @@
 				154BC41A1F0E6B36004AECBE /* NewsRouter.swift */,
 				154BC4181F0E6B26004AECBE /* NewsRouterIO.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -283,7 +278,6 @@
 			children = (
 				154BC4281F0E79A0004AECBE /* ArticleAssembly.swift */,
 			);
-			name = Assembly;
 			path = Assembly;
 			sourceTree = "<group>";
 		};
@@ -294,7 +288,6 @@
 				154BC42E1F0E7B3F004AECBE /* ArticleViewController.swift */,
 				154BC42A1F0E7A05004AECBE /* ArticleViewIO.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -304,7 +297,6 @@
 				154BC43A1F0E7EE8004AECBE /* ArticleModuleIO.swift */,
 				154BC4321F0E7CAB004AECBE /* ArticlePresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -314,7 +306,6 @@
 				154BC4361F0E7D67004AECBE /* ArticleInteractor.swift */,
 				154BC4341F0E7D3E004AECBE /* ArticleInteractorIO.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -323,18 +314,37 @@
 			children = (
 				154BC4381F0E7E00004AECBE /* ArticleItem.swift */,
 			);
-			name = Entity;
 			path = Entity;
 			sourceTree = "<group>";
 		};
 		154BC43C1F0E8280004AECBE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				154BC44C1F0E93C9004AECBE /* API */,
+				154BC44D1F0E93D3004AECBE /* Cache */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		154BC44C1F0E93C9004AECBE /* API */ = {
+			isa = PBXGroup;
+			children = (
 				154BC43D1F0E82A3004AECBE /* APIService.swift */,
 				154BC43F1F0E830B004AECBE /* APIServiceImpl.swift */,
 			);
-			name = Services;
-			path = Services;
+			name = API;
+			sourceTree = "<group>";
+		};
+		154BC44D1F0E93D3004AECBE /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				154BC4411F0E8BAA004AECBE /* CacheService.swift */,
+				154BC4431F0E8BB4004AECBE /* CacheServiceImpl.swift */,
+				154BC4451F0E9350004AECBE /* CacheModel.xcdatamodeld */,
+				154BC4481F0E93C5004AECBE /* CachedNewsItem+CoreDataClass.swift */,
+				154BC4491F0E93C5004AECBE /* CachedNewsItem+CoreDataProperties.swift */,
+			);
+			name = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,10 +428,14 @@
 				154BC4351F0E7D3E004AECBE /* ArticleInteractorIO.swift in Sources */,
 				154BC4371F0E7D67004AECBE /* ArticleInteractor.swift in Sources */,
 				154BC43B1F0E7EE8004AECBE /* ArticleModuleIO.swift in Sources */,
+				154BC4441F0E8BB4004AECBE /* CacheServiceImpl.swift in Sources */,
 				154BC40D1F0E6A31004AECBE /* NewsView.swift in Sources */,
+				154BC44B1F0E93C5004AECBE /* CachedNewsItem+CoreDataProperties.swift in Sources */,
 				154BC4121F0E6AC7004AECBE /* NewsPresenter.swift in Sources */,
 				154BC42F1F0E7B3F004AECBE /* ArticleViewController.swift in Sources */,
 				154BC4211F0E731B004AECBE /* DateExtensions.swift in Sources */,
+				154BC44A1F0E93C5004AECBE /* CachedNewsItem+CoreDataClass.swift in Sources */,
+				154BC4421F0E8BAA004AECBE /* CacheService.swift in Sources */,
 				154BC41D1F0E6B50004AECBE /* NewsItem.swift in Sources */,
 				154BC40B1F0E69F1004AECBE /* NewsViewIO.swift in Sources */,
 				154BC4171F0E6B03004AECBE /* NewsInteractorIO.swift in Sources */,
@@ -430,6 +444,7 @@
 				154BC4091F0E697F004AECBE /* NewsViewController.swift in Sources */,
 				154BC4071F0E6934004AECBE /* NewsAssembly.swift in Sources */,
 				154BC42B1F0E7A05004AECBE /* ArticleViewIO.swift in Sources */,
+				154BC4471F0E9350004AECBE /* CacheModel.xcdatamodeld in Sources */,
 				154BC4291F0E79A0004AECBE /* ArticleAssembly.swift in Sources */,
 				154BC3F51F0E6875004AECBE /* MainRouter.swift in Sources */,
 				154BC4391F0E7E00004AECBE /* ArticleItem.swift in Sources */,
@@ -605,8 +620,23 @@
 				154BC3EF1F0E67E9004AECBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		154BC4451F0E9350004AECBE /* CacheModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				154BC4461F0E9350004AECBE /* CacheModel.xcdatamodel */,
+			);
+			currentVersion = 154BC4461F0E9350004AECBE /* CacheModel.xcdatamodel */;
+			name = CacheModel.xcdatamodeld;
+			path = ../../CacheModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 154BC3D31F0E67E9004AECBE /* Project object */;
 }

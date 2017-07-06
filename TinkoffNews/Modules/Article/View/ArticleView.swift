@@ -12,9 +12,11 @@ class ArticleView: UIView {
     
     func setData(_ data: ArticleViewItem) {
         textView.text = data.content
+        activityIndicator.stopAnimating()
     }
     
     fileprivate let textView = UITextView(frame: .zero)
+    fileprivate let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
     
     init() {
         super.init(frame: .zero)
@@ -25,6 +27,13 @@ class ArticleView: UIView {
         textView.font = UIFont.systemFont(ofSize: 14)
         textView.isEditable = false
         textView.dataDetectorTypes = .all
+        
+        addSubview(activityIndicator)
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.startAnimating()
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicator.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        activityIndicator.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {

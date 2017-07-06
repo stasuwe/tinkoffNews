@@ -41,7 +41,6 @@ final class ArticlePresenter: ArticleModuleInput, ArticleViewOutput, ArticleInte
     
     
     fileprivate func fetchArticleWithId(_ id: String) {
-        //view?.showLoading()
         interactor.fetchArticleWithId(id, completion: { [weak self] articleItem in
             guard let articleItem = articleItem,
                 let articleViewItem = self?.articleViewItemFromNewsItem(articleItem) else { return }

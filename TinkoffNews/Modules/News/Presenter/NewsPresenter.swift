@@ -28,18 +28,18 @@ final class NewsPresenter: NewsViewOutput, NewsInteractorOutput {
         
         view?.onViewDidLoad = { [weak self] in
             self?.view?.setTitle("News")
-            self?.fetchNews()
+            self?.fetchNews(useCache: true)
         }
         
         view?.onRefresh = { [weak self] in
-            self?.fetchNews()
+            self?.fetchNews(useCache: false)
         }
     }
     
     
-    fileprivate func fetchNews() {
+    fileprivate func fetchNews(useCache: Bool) {
         view?.showLoading()
-        interactor.fetchNews(completion: { [weak self] newsItems in
+        interactor.fetchNews(useCache: useCache, completion: { [weak self] newsItems in
             guard let newsViewItems = self?.newsViewItemsFromNewsItems(newsItems) else { return }
             self?.view?.setData(newsViewItems)
         })

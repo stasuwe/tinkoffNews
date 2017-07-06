@@ -12,7 +12,7 @@ class NewsAssembly {
     
     static func createModule(root: MainRouter) -> UIViewController {
         
-        let interactor = NewsInteractor(apiService: APIServiceImpl())
+        let interactor = NewsInteractor(apiService: APIServiceImpl(), cacheService: CacheServiceImpl())
         let router = NewsRouter(root: root, moduleFactory: ModuleFactory(mainRouter: root))
         let presenter = NewsPresenter(interactor: interactor, router: router)
         let view = NewsViewController(style: .plain)
