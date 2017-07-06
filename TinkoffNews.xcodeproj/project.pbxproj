@@ -94,8 +94,8 @@
 		154BC3D21F0E67E9004AECBE = {
 			isa = PBXGroup;
 			children = (
-				154BC3DD1F0E67E9004AECBE /* TinkoffNews */,
 				154BC3DC1F0E67E9004AECBE /* Products */,
+				154BC3DD1F0E67E9004AECBE /* TinkoffNews */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,10 +110,10 @@
 		154BC3DD1F0E67E9004AECBE /* TinkoffNews */ = {
 			isa = PBXGroup;
 			children = (
-				154BC3DE1F0E67E9004AECBE /* AppDelegate.swift */,
 				154BC3FD1F0E68B5004AECBE /* Common */,
 				154BC3FE1F0E68C1004AECBE /* Modules */,
 				154BC3F01F0E680A004AECBE /* Supporting Files */,
+				154BC3DE1F0E67E9004AECBE /* AppDelegate.swift */,
 			);
 			path = TinkoffNews;
 			sourceTree = "<group>";
@@ -121,12 +121,13 @@
 		154BC3F01F0E680A004AECBE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				154BC3E21F0E67E9004AECBE /* Main.storyboard */,
 				154BC3E51F0E67E9004AECBE /* Assets.xcassets */,
-				154BC3E71F0E67E9004AECBE /* LaunchScreen.storyboard */,
 				154BC3EA1F0E67E9004AECBE /* Info.plist */,
+				154BC3E71F0E67E9004AECBE /* LaunchScreen.storyboard */,
+				154BC3E21F0E67E9004AECBE /* Main.storyboard */,
 			);
 			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		154BC3F11F0E683A004AECBE /* Factories */ = {
@@ -135,6 +136,7 @@
 				154BC3F21F0E6850004AECBE /* ModuleFactory.swift */,
 			);
 			name = Factories;
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		154BC3FA1F0E6895004AECBE /* Router */ = {
@@ -143,6 +145,7 @@
 				154BC3F41F0E6875004AECBE /* MainRouter.swift */,
 			);
 			name = Router;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		154BC3FB1F0E689D004AECBE /* View */ = {
@@ -153,6 +156,7 @@
 				154BC3F71F0E687B004AECBE /* ViewLifecycleObservable.swift */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		154BC3FD1F0E68B5004AECBE /* Common */ = {
@@ -161,44 +165,48 @@
 				154BC40E1F0E6A72004AECBE /* Extensions */,
 				154BC3F11F0E683A004AECBE /* Factories */,
 				154BC3FA1F0E6895004AECBE /* Router */,
-				154BC3FB1F0E689D004AECBE /* View */,
 				154BC43C1F0E8280004AECBE /* Services */,
+				154BC3FB1F0E689D004AECBE /* View */,
 			);
 			name = Common;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		154BC3FE1F0E68C1004AECBE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				154BC4001F0E68E0004AECBE /* News */,
 				154BC3FF1F0E68CD004AECBE /* Article */,
+				154BC4001F0E68E0004AECBE /* News */,
 			);
 			name = Modules;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		154BC3FF1F0E68CD004AECBE /* Article */ = {
 			isa = PBXGroup;
 			children = (
 				154BC4221F0E795D004AECBE /* Assembly */,
-				154BC4231F0E7962004AECBE /* View */,
-				154BC4241F0E7966004AECBE /* Presenter */,
-				154BC4251F0E796C004AECBE /* Interactor */,
 				154BC4271F0E7978004AECBE /* Entity */,
+				154BC4251F0E796C004AECBE /* Interactor */,
+				154BC4241F0E7966004AECBE /* Presenter */,
+				154BC4231F0E7962004AECBE /* View */,
 			);
 			name = Article;
+			path = Article;
 			sourceTree = "<group>";
 		};
 		154BC4001F0E68E0004AECBE /* News */ = {
 			isa = PBXGroup;
 			children = (
 				154BC4011F0E68F6004AECBE /* Assembly */,
-				154BC4021F0E68FC004AECBE /* View */,
-				154BC4041F0E6905004AECBE /* Presenter */,
-				154BC4031F0E6900004AECBE /* Interactor */,
-				154BC4131F0E6ADE004AECBE /* Router */,
 				154BC4051F0E690A004AECBE /* Entity */,
+				154BC4031F0E6900004AECBE /* Interactor */,
+				154BC4041F0E6905004AECBE /* Presenter */,
+				154BC4131F0E6ADE004AECBE /* Router */,
+				154BC4021F0E68FC004AECBE /* View */,
 			);
 			name = News;
+			path = News;
 			sourceTree = "<group>";
 		};
 		154BC4011F0E68F6004AECBE /* Assembly */ = {
@@ -207,16 +215,18 @@
 				154BC4061F0E6934004AECBE /* NewsAssembly.swift */,
 			);
 			name = Assembly;
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		154BC4021F0E68FC004AECBE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				154BC40C1F0E6A31004AECBE /* NewsView.swift */,
 				154BC4081F0E697F004AECBE /* NewsViewController.swift */,
 				154BC40A1F0E69F1004AECBE /* NewsViewIO.swift */,
-				154BC40C1F0E6A31004AECBE /* NewsView.swift */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		154BC4031F0E6900004AECBE /* Interactor */ = {
@@ -226,6 +236,7 @@
 				154BC4161F0E6B03004AECBE /* NewsInteractorIO.swift */,
 			);
 			name = Interactor;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		154BC4041F0E6905004AECBE /* Presenter */ = {
@@ -234,6 +245,7 @@
 				154BC4111F0E6AC7004AECBE /* NewsPresenter.swift */,
 			);
 			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		154BC4051F0E690A004AECBE /* Entity */ = {
@@ -242,25 +254,28 @@
 				154BC41C1F0E6B50004AECBE /* NewsItem.swift */,
 			);
 			name = Entity;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		154BC40E1F0E6A72004AECBE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				154BC40F1F0E6A7B004AECBE /* UITableViewExtensions.swift */,
-				154BC41E1F0E70DB004AECBE /* StringExtensions.swift */,
 				154BC4201F0E731B004AECBE /* DateExtensions.swift */,
+				154BC41E1F0E70DB004AECBE /* StringExtensions.swift */,
+				154BC40F1F0E6A7B004AECBE /* UITableViewExtensions.swift */,
 			);
 			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		154BC4131F0E6ADE004AECBE /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				154BC4181F0E6B26004AECBE /* NewsRouterIO.swift */,
 				154BC41A1F0E6B36004AECBE /* NewsRouter.swift */,
+				154BC4181F0E6B26004AECBE /* NewsRouterIO.swift */,
 			);
 			name = Router;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		154BC4221F0E795D004AECBE /* Assembly */ = {
@@ -269,34 +284,38 @@
 				154BC4281F0E79A0004AECBE /* ArticleAssembly.swift */,
 			);
 			name = Assembly;
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		154BC4231F0E7962004AECBE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				154BC42A1F0E7A05004AECBE /* ArticleViewIO.swift */,
 				154BC42C1F0E7A58004AECBE /* ArticleView.swift */,
 				154BC42E1F0E7B3F004AECBE /* ArticleViewController.swift */,
+				154BC42A1F0E7A05004AECBE /* ArticleViewIO.swift */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		154BC4241F0E7966004AECBE /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				154BC4321F0E7CAB004AECBE /* ArticlePresenter.swift */,
 				154BC43A1F0E7EE8004AECBE /* ArticleModuleIO.swift */,
+				154BC4321F0E7CAB004AECBE /* ArticlePresenter.swift */,
 			);
 			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		154BC4251F0E796C004AECBE /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				154BC4341F0E7D3E004AECBE /* ArticleInteractorIO.swift */,
 				154BC4361F0E7D67004AECBE /* ArticleInteractor.swift */,
+				154BC4341F0E7D3E004AECBE /* ArticleInteractorIO.swift */,
 			);
 			name = Interactor;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		154BC4271F0E7978004AECBE /* Entity */ = {
@@ -305,6 +324,7 @@
 				154BC4381F0E7E00004AECBE /* ArticleItem.swift */,
 			);
 			name = Entity;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		154BC43C1F0E8280004AECBE /* Services */ = {
@@ -314,6 +334,7 @@
 				154BC43F1F0E830B004AECBE /* APIServiceImpl.swift */,
 			);
 			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +452,7 @@
 				154BC3E31F0E67E9004AECBE /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		154BC3E71F0E67E9004AECBE /* LaunchScreen.storyboard */ = {
@@ -439,6 +461,7 @@
 				154BC3E81F0E67E9004AECBE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -542,7 +565,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 96CUY85L7H;
-				INFOPLIST_FILE = TinkoffNews/Info.plist;
+				INFOPLIST_FILE = "TinkoffNews/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sarychevstas.ru.TinkoffNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -555,7 +578,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 96CUY85L7H;
-				INFOPLIST_FILE = TinkoffNews/Info.plist;
+				INFOPLIST_FILE = "TinkoffNews/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sarychevstas.ru.TinkoffNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
