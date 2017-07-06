@@ -86,8 +86,8 @@
 		154BC4411F0E8BAA004AECBE /* CacheService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
 		154BC4431F0E8BB4004AECBE /* CacheServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheServiceImpl.swift; sourceTree = "<group>"; };
 		154BC4461F0E9350004AECBE /* CacheModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CacheModel.xcdatamodel; sourceTree = "<group>"; };
-		154BC4481F0E93C5004AECBE /* CachedNewsItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CachedNewsItem+CoreDataClass.swift"; path = "../../CachedNewsItem+CoreDataClass.swift"; sourceTree = "<group>"; };
-		154BC4491F0E93C5004AECBE /* CachedNewsItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CachedNewsItem+CoreDataProperties.swift"; path = "../../CachedNewsItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		154BC4481F0E93C5004AECBE /* CachedNewsItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CachedNewsItem+CoreDataClass.swift"; path = "CachedNewsItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		154BC4491F0E93C5004AECBE /* CachedNewsItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CachedNewsItem+CoreDataProperties.swift"; path = "CachedNewsItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,18 +333,20 @@
 				154BC43F1F0E830B004AECBE /* APIServiceImpl.swift */,
 			);
 			name = API;
+			path = API;
 			sourceTree = "<group>";
 		};
 		154BC44D1F0E93D3004AECBE /* Cache */ = {
 			isa = PBXGroup;
 			children = (
+				154BC4451F0E9350004AECBE /* CacheModel.xcdatamodeld */,
 				154BC4411F0E8BAA004AECBE /* CacheService.swift */,
 				154BC4431F0E8BB4004AECBE /* CacheServiceImpl.swift */,
-				154BC4451F0E9350004AECBE /* CacheModel.xcdatamodeld */,
 				154BC4481F0E93C5004AECBE /* CachedNewsItem+CoreDataClass.swift */,
 				154BC4491F0E93C5004AECBE /* CachedNewsItem+CoreDataProperties.swift */,
 			);
 			name = Cache;
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -632,7 +634,7 @@
 			);
 			currentVersion = 154BC4461F0E9350004AECBE /* CacheModel.xcdatamodel */;
 			name = CacheModel.xcdatamodeld;
-			path = ../../CacheModel.xcdatamodeld;
+			path = CacheModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
