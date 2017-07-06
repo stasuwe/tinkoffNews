@@ -43,20 +43,19 @@ final class CacheServiceImpl: CacheService {
     }
     
     func saveNews(_ news: [NewsItem]) {
-        let context = persistentContainer.viewContext
+        let context = persistentContainer.newBackgroundContext()
         news.forEach({
             let cachedNewsItem = NSEntityDescription.insertNewObject(forEntityName: CachedEntities.newsItem.rawValue, into: context) as! CachedNewsItem
             cachedNewsItem.id = $0.id
             cachedNewsItem.text = $0.text
             cachedNewsItem.publicationDate = $0.publicationDate as NSDate
         })
-        saveContext()
+        save(context)
     }
     
     
     //MARK: - private methods
-    fileprivate func saveContext () {
-        let context = persistentContainer.viewContext
+    fileprivate func save(_ context: NSManagedObjectContext) {
         if context.hasChanges {
             do {
                 try context.save()
